@@ -161,7 +161,7 @@
 
 				noiseRate = abs(1 - ValueNoise(i.uv * _Size, _Seed));
 
-				#else 
+				#elif _NOISETYPE_PERLINNOISE 
 
 				noiseRate = PerlinNoise(i.uv * _Size, _Seed);
 
