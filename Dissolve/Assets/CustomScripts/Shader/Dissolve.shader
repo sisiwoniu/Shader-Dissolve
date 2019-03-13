@@ -180,7 +180,7 @@
 
 				_NoiseColor.a *= col.a;
 
-				col = lerp(col, _NoiseColor * _Emission, step(rate, _AlphaThreshold) * step(0.01, rate));
+				col = lerp(col, _NoiseColor * _Emission, step(rate, _AlphaThreshold)); //* step(0.01, rate));
 
 				col.a *= step(rate, _AlphaThreshold);
 				
